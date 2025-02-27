@@ -7,7 +7,7 @@
     <img src="https://img.shields.io/badge/Telegram-Contact-blue?style=for-the-badge&logo=telegram" alt="Telegram Contact">
 </a>
 <br>
-<b>Donations:</b> <code>Your Wallet Address Here</code>
+<b>Donations:</b> <code>0x75e5F8620aC4B397c625B5701719B3Dc2BeB5A2A</code>
 </div>
 
 
