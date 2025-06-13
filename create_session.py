@@ -41,20 +41,9 @@ async def create_sessions():
 
                 logger.success(f'Session added +{user_data.phone_number} @{user_data.username} PROXY {proxy.split(":")[0]}')
             else:
-                
-                session = pyrogram.Client(
-                    api_id=API_ID,
-                    api_hash=API_HASH,
-                    name=session_name,
-                    workdir=WORKDIR
-                )
-
-                async with session:
-                    user_data = await session.get_me()
-
-                logger.success(f'Session added +{user_data.phone_number} @{user_data.username} PROXY : NONE')
+                logger.error(f'Proxy for session {session_name} not found in proxy.txt')
+                continue
         else:
-            
             session = pyrogram.Client(
                 api_id=API_ID,
                 api_hash=API_HASH,
